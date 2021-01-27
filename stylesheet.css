@@ -1,0 +1,408 @@
+
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 12px;
+outline: none;
+
+  
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 2px;
+  font-size: 8vw;
+  color: rgb(51, 51, 92);
+  text-align: center;
+  
+}
+h3 {
+  font-weight: normal;
+  font-family: "DM Serif Display", serif;
+  font-family: "Hind Guntur", sans-serif;
+  word-spacing: 4px;
+  letter-spacing: normal;
+  display: inline-block;
+}
+#alrt1,#alrt2,#alrt3,#alrt4,#alrt5,#alrt6{
+  color: red;
+  text-align: left;
+  margin-top: 0px;
+  visibility: hidden;
+  
+}
+.selection-div,.msg-div{
+  margin-bottom: 0px;
+}
+.subcontainer,.step{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+.step1,.step-2{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid rgb(51, 51, 92);
+  color: black;
+  text-align: center;
+  padding: 8px;
+  margin: 4px;
+} 
+.last-part{
+margin-top: 22px;
+}
+.active-1{
+height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(51, 51, 92);
+  color: white;
+  background-color: rgb(51, 51, 92) ;
+  margin: auto;
+  
+  padding: 10px;
+  font-size: 28px;
+}
+span{
+font-size: 18px;
+font-weight: bold;
+}
+.step2{
+display: inline-block;
+height: 10px;
+width: 10px;
+border-radius: 50%;
+border: 1px solid rgb(51, 51, 92);
+color: white;
+background-color: rgb(51, 51, 92);
+text-align: center;
+padding: 8px;
+margin: 4px;
+} 
+#active{
+background-color: rgb(51, 51, 92);;
+color: white;
+}
+label{
+text-align: left;
+} 
+.active {
+  border: 1px solid rgb(78, 75, 75);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 39px;
+  color: white;
+  background-color: rgb(51, 51, 92);
+  margin-left: 32px;
+  box-shadow: 1px 1px 5px rgb(52, 245, 84);
+}
+
+#container,#container-2,#container-3 {
+  /* position: absolute; --> for making the sections of wepage at the same position */
+   height: 90vh;
+  width: 80%; 
+   margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
+  background-color: white;
+  box-shadow: 1px 1px 7px 3px rgb(125, 136, 122),
+  -1px -1px 7px 3px rgb(156, 167, 152), -1px 1px 7px 3px rgb(101, 105, 99),
+  1px -1px 7px 3px rgb(106, 131, 95), 4px 8px 13px 35px rgb(93, 248, 189);
+
+  display: none;
+}
+.subcontainer {
+  height: 450px;
+  width: 80vw;
+  margin: auto;
+  padding-bottom: 3rem;
+ 
+  background-color: white;
+}
+
+label,
+.btn1 {
+  margin-bottom: 12px;
+  outline: none;
+}
+textarea{
+  height: 20vh;
+}
+select,textarea{
+ width: 12px;
+}
+.btn {
+  outline: none;
+  height: 5vh;
+  width: 152px;
+  margin-left: 5px;
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  background-color: rgb(245, 248, 248);
+}
+.form-control {
+  width: 67vw;
+  margin-left: 22px;
+ 
+}
+#page-entry{
+background: linear-gradient(rgb(250, 209, 95),rgb(247, 170, 3),white,rgb(0, 255, 0),black);
+height: 676px;
+display: block;
+overflow: hidden;
+
+}
+
+.wlcm{
+  white-space:nowrap;
+  overflow: hidden;
+  font-size: 8vw;
+  padding: 12%;
+  animation:move linear 4s;
+}
+@keyframes move{
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 20ch;
+    color: blue;
+    text-shadow: 1px 1px 2px gray;
+  }
+}
+.button{
+  background: rgb(19, 110, 122);
+  color: white;
+  width: 25vh;
+  height: 8vh;
+  border-radius: 2px;
+  box-shadow: 6px 6px 1px black;
+  /*margin-left:40%;*6
+  /*margin-top:20%; */
+  margin-left:30%; 
+  margin-top:65%; 
+  animation: flip 2s linear;   
+ /* animation-delay: 3s ; */
+  outline: none;
+  
+  
+}
+@keyframes flip{
+0%{
+  transform: none;
+}
+100%{
+ 
+  transition-duration: 1s;
+   transform: scale(-0.8,0.8) rotate(30deg);
+}
+}
+
+
+.subcontainer label,
+input,
+textarea {
+  display: block;
+  outline: none;
+}
+
+
+
+select,
+textarea{
+  outline: none;
+  width: 37vh;
+  border-style: none;
+  background-color: rgb(223, 221, 221);
+  color: white;
+}
+
+select{
+  height: 5vh;
+  color: black;
+}
+.close-btn {
+  cursor: pointer;
+  text-align: right;
+  padding-top: 25px;
+  padding-right: 22px;
+  color: gray;
+}
+
+
+input,
+label {
+  margin-bottom: 12px;
+}
+/* css for the second step of the form */
+.name-control,
+.confirmation,
+.btn2 {
+  display: flex;
+}
+.name-control {
+  width: 100%;
+}
+.chkbx {
+  padding-top: 15px;
+}
+p {
+  font-size: 10px;
+  line-height: 18px;
+  font-family: "Gothic A1", sans-serif;
+  font-family: "Hind Guntur", sans-serif;
+}
+.last-name,
+.first-name {
+  width: 50%;
+}
+.first-name input {
+  width: 94%;
+  height: 4vh;
+  margin-right: 42px;
+  border-style: none;
+  background-color: rgb(223, 221, 221);
+  
+}
+.last-name input {
+  width: 100%;
+  height: 4vh;
+  border-style: none;
+  background-color: rgb(223, 221, 221);
+  color: black;
+}
+.inpt{
+  width: 100%;
+  height: 4vh;
+  margin-right: 42px;
+  margin-bottom: -2px;
+  border-style: none;
+  background-color: rgb(223, 221, 221);
+}
+.btn-part{
+  margin-top: 12px;
+}
+.btn2 {
+  
+  border-radius: 5px;
+ 
+}
+.back {
+  float: left;
+  cursor: pointer;
+  border-style: none;
+  margin-right: 75px;
+  color: rgb(32, 32, 102);
+  background-color: white;
+}
+
+/* .back input{
+    border-style: none;
+    color: rgb(32, 32, 102);
+} */
+
+footer{
+  margin-top:180px ;
+  text-align: center;
+}
+footer hr{
+  width: 300px;
+}
+footer p{
+  
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(174, 240, 75);
+}
+
+#welcome {
+  width: 100%;
+  display: flex;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(#1d4350, #a43931) ;
+}
+  /* For 1024 Resolution */  
+@media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1596px){
+  .subcontainer{
+    display:block;
+    height: 450px;
+    width: 500px;
+    margin: auto;
+    padding-bottom: 3rem;
+    overflow: hidden;
+    background-color: rgb(253, 253, 253);
+  }
+  #container,#container-2,#container-3 {
+    width:95%;
+  }
+.wlcm{
+font-size: 5vw;
+  padding: 2%;
+  text-align: center;
+}
+.button{
+  margin-left: 42%;
+  margin-top: 12%;
+}
+h1{
+  font-size: 3rem;
+}
+select{
+  margin-right: 73em;
+  margin-bottom: -2px;
+}
+textarea,select{
+  width:34em;
+  color: black;
+}
+
+.form-control {
+  width: 30vw;
+  margin-left: 25px;
+}
+.btn2 {
+  border-radius: 5px;
+  height: 30px;
+  padding: 6px;
+}
+.back {
+  margin-right: 139px;
+}
+footer{
+  margin-top:250px ;
+  text-align: center;
+}
+footer hr{
+  width: 660px;
+}
+footer p{
+  font-size: 1.3rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(174, 240, 75);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

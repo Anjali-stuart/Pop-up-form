@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get-In-Touch-Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="/W3S/W3S/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Gothic+A1:wght@100&family=Hind+Guntur:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <div class="close-btn" onclick="exit()">CLOSE</div>
+        <div class="subcontainer">
+            <h1>Get in touch</h1>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            <div class="steps">
+                <div class="step1" id="active">1</div>
+                <div class="step1">2</div>
+                <div class="step1"><i class="fa fa-check"></i></div>
+            </div>
+
+            <div class="form-control" onsubmit="return valdiation()">
+                <label for="GeneralInquiry">Enquiry type</label>
+                <div class="selection-div">
+                <select id="slct" name="enqiry" required>
+                    <option  value="enquiry type">enquiry type</option>
+                    <option onclick="clcked()" value="General inquiry">General Inquiry</option>
+                    <option onclick="clcked()" value="Advance inquiry">Advance inquiry</option>
+                    <option  value="General inquiry">General Inquiry</option>
+                    <option onclick="clicked()" value="Advance inquiry">Advance inquiry</option>
+                </select>
+                <p id="alrt1">*required field!</p>
+            </div>
+            
+                <label for="message">Your message</label>
+                <div class="msg-div">
+                <textarea name="message" id="msg" cols="30" rows="10" placeholder="start typing..." required></textarea>
+                <p id="alrt2">*required field!</p>
+            </div>
+                <!-- <input class="button" type="submit" value="CONFIRM MESSAGE"> -->
+                <button class="btn" onsubmit="return valdiate()" onclick="next()"
+                    onmouseout="this.style.backgroundColor='white'"
+                    onmouseover="this.style.backgroundColor='powderblue'">CONFIRM MESSAGE</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="container-2">
+
+        <div class="close-btn" onclick="exit()">CLOSE</div>
+        <div class="subcontainer">
+            <h1>Get in touch</h1>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+
+            <div class="steps">
+                <div class="step2">1</div>
+                <div class="step2">2</div>
+                <div class="step-2"> <i class="fa fa-check"></i> </div>
+
+            </div>
+
+            <div class="form-control">
+                <div class="name-control">
+                    <div class="first-name">
+                        <label for="First name">First name </label>
+                        <input id="fname" class="inpt" type="text" placeholder="first name">
+                        <p id="alrt3">*required!</p>
+                    </div>
+                    <div class="last-name">
+                        <label for="last name">Last name</label>
+                        <input id="lname" class="inpt" type="text" placeholder="last name">
+                        <p id="alrt4">*required!</p>
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="e-mail"  class="inpt" placeholder="e.g name@domai.com">
+                <p id="alrt5">*required!</p>
+                <label for="Telephone number">Telephone</label>
+                <input id="num" type="number" class="inpt" placeholder="e.g 0123456789">
+                <p id="alrt6">*required!</p>
+                <div class="confirmation">
+                    <input type="checkbox" id="chkbx" required>
+                    <label>
+                        I confirm that on submitting this form I am consenting to [company ] storing and using
+                        the information detailed above, Information on this can be found on in our privacy policy.
+                    </label>
+                </div>
+                <div class="btn-part">
+                    <div class="back" onclick="previous()"> &lt;BACK</div>
+                    <button class="btn2" onclick="next2()">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <div id="container-3">
+        <div class="close-btn" onclick="exit()">CLOSE</div>
+        <div class="subcontainer">
+            <h1>Get in touch</h1>
+            <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            <div class="steps">
+                <div class="step2">1</div>
+                <div class="step2">2</div>
+                <div class="step2"> <i class="fa fa-check"></i> </div>
+
+            </div>
+            <div class="last-part">
+                <div class="active-1"><i class="fa fa-check"></i></div>
+                <span>Thank you for your message</span>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="page-entry">
+        <div class="wlcm">Click the button below!</div>
+        <button class="button" onclick="show()">Click here</button>
+        <footer>
+            <hr>
+            <p>&copy 2021 Anjali blog all right reserved !</p>
+        </footer>
+    </div>
+
+    
+    <script src="js/index.js"></script>
+    
+</body>
+
+</html>
+<!-- ***********************************************************8 -->
