@@ -43,6 +43,7 @@ function next2() {
     var lastName = document.getElementById("lname");
     var email = document.getElementById("e-mail");
     var phone = document.getElementById("num");
+    var checkd = document.getElementById("chkbx");
     if (firstName.value == "") {
         document.getElementById("alrt3").style.visibility = "visible";
         firstName.style.border = "2px solid red";
@@ -57,6 +58,10 @@ function next2() {
         document.getElementById("alrt6").style.visibility = "visible";
         phone.style.border = "2px solid red";
     } 
+    else if(document.getElementById('chkbx').checked == false){
+        alert("plz tick the box before move!.");
+
+    }
     else {
         firstName.value = "";
         lastName.value = "";
@@ -70,6 +75,7 @@ function next2() {
         email.style.border = "none";
         document.getElementById("alrt6").style.visibility = "hidden";
         phone.style.border = "none";
+        document.getElementById('chkbx').checked = false;
         document.getElementById("container").style.display = "none";
         document.getElementById("container-2").style.display = "none";
         document.getElementById("container-3").style.display = "block";

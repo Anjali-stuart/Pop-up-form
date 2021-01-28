@@ -152,7 +152,7 @@ select,textarea{
  
 }
 #page-entry{
-background: linear-gradient(rgb(136, 95, 250),rgb(247, 170, 3),white,rgb(0, 255, 0),black);
+background: linear-gradient(rgb(250, 204, 105),rgb(247, 170, 3),white,white,rgb(0, 255, 0),black);
 height: 100vh;
 display: block;
 overflow: hidden;
