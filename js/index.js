@@ -21,7 +21,7 @@ function next() {
         b.style.border = "2px solid red";
         document.getElementById("alrt1").style.visibility = "visible";
 
-    } else if (a.value == "") {
+    } else if (a.value.trim().length<=0) {
         a.style.border="2px solid red";
         document.getElementById("alrt2").style.visibility = "visible";
 
@@ -44,17 +44,17 @@ function next2() {
     var email = document.getElementById("e-mail");
     var phone = document.getElementById("num");
     var checkd = document.getElementById("chkbx");
-    if (firstName.value == "") {
+    if (firstName.value.trim().length<=0) {
         document.getElementById("alrt3").style.visibility = "visible";
         firstName.style.border = "2px solid red";
-    } else if (lastName.value == "") {
+    } else if (lastName.value.trim().length<=0) {
         document.getElementById("alrt4").style.visibility = "visible";
         lastName.style.border = "2px solid red";
         
-    } else if (email.value == "") {
+    } else if (email.value.trim().length<=0) {
         document.getElementById("alrt5").style.visibility = "visible";
         email.style.border = "2px solid red";
-    } else if (phone.value == "") {
+    } else if (phone.value.trim().length<=0) {
         document.getElementById("alrt6").style.visibility = "visible";
         phone.style.border = "2px solid red";
     } 
@@ -85,12 +85,6 @@ function next2() {
 
 }
 
-function reset() {
-    firstName.value = "";
-    lastName.value == "";
-    email.value == "";
-    phone.value == "";
-}
 
 function previous() {
     document.getElementById("container").style.display = "block";
