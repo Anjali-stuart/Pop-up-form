@@ -132,6 +132,7 @@ label,
 }
 textarea{
   height: 20vh;
+  padding-left: 10px;
 }
 select,textarea{
  width: 12px;
@@ -152,7 +153,8 @@ select,textarea{
  
 }
 #page-entry{
-background: linear-gradient(rgb(250, 204, 105),rgb(247, 170, 3),white,white,rgb(0, 255, 0),black);
+  
+background-color:rgb(93, 248, 189) ;
 height: 100vh;
 display: block;
 overflow: hidden;
@@ -160,13 +162,13 @@ overflow: hidden;
 }
 
 .wlcm{
-  white-space:nowrap;
-  overflow: hidden;
+  /* white-space:nowrap;
+  overflow: hidden; */
   font-size: 8vw;
   padding: 12%;
-  animation:move linear 4s;
+  /* animation:move linear 4s; */
 }
-@keyframes move{
+/* @keyframes move{
   0%{
     width: 0ch;
   }
@@ -175,7 +177,7 @@ overflow: hidden;
     color: blue;
     text-shadow: 1px 1px 2px gray;
   }
-}
+} */
 .button{
   background: rgb(19, 110, 122);
   color: white;
@@ -193,7 +195,10 @@ overflow: hidden;
   
   
 }
-@keyframes flip{
+.button:hover{
+  cursor: pointer;
+}
+/* @keyframes flip{
 0%{
   transform: none;
 }
@@ -202,7 +207,7 @@ overflow: hidden;
   transition-duration: 1s;
    transform: scale(-0.8,0.8) rotate(30deg);
 }
-}
+} */
 
 
 .subcontainer label,
@@ -225,7 +230,7 @@ textarea{
 
 select{
   height: 5vh;
-  color: black;
+  padding: 10px;
 }
 .close-btn {
   cursor: pointer;
@@ -284,6 +289,7 @@ p {
   margin-bottom: -2px;
   border-style: none;
   background-color: rgb(223, 221, 221);
+  padding-left: 10px;
 }
 .btn-part{
   margin-top: 12px;
@@ -310,15 +316,18 @@ p {
 footer{
   margin-top:180px ;
   text-align: center;
+  
 }
 footer hr{
   width: 300px;
+  color: rgb(24, 22, 22);
 }
 footer p{
-  
+  color: black;
   font-family: 'Courier New', Courier, monospace;
-  color: rgb(174, 240, 75);
+  
 }
+
 
 #welcome {
   width: 100%;
@@ -382,11 +391,12 @@ footer{
 }
 footer hr{
   width: 660px;
+  color: rgb(26, 24, 24);
 }
 footer p{
   font-size: 1.3rem;
   font-family: 'Courier New', Courier, monospace;
-  color: rgb(174, 240, 75);
+  color: rgb(7, 7, 6);
 }
 }
 
