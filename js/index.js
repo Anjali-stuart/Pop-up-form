@@ -14,8 +14,8 @@ function show() {
 
 
 function next() {
-    var a = document.getElementById("msg");
-    var b = document.getElementById("slct");
+    let a = document.getElementById("msg");
+    let b = document.getElementById("slct");
 
     if (b.value == "enquiry type") {
         b.style.border = "2px solid red";
@@ -39,11 +39,11 @@ function next() {
 console.log(document.querySelector("textarea").attributes)
 
 function next2() {
-    var firstName = document.getElementById("fname");
-    var lastName = document.getElementById("lname");
-    var email = document.getElementById("e-mail");
-    var phone = document.getElementById("num");
-    var checkd = document.getElementById("chkbx");
+    let firstName = document.getElementById("fname");
+    let lastName = document.getElementById("lname");
+    let email = document.getElementById("e-mail");
+    let phone = document.getElementById("num");
+    let checkd = document.getElementById("chkbx");
     if (firstName.value.trim().length<=0) {
         document.getElementById("alrt3").style.visibility = "visible";
         firstName.style.border = "2px solid red";

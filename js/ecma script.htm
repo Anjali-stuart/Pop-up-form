@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display:flex;
+            
+        }
+        div strong{
+            margin: 0px;
+            
+        }
+        div .a{
+            margin-right: 12px;
+          
+            width:112px;
+        }
+        div .b{
+            margin-left: 12px;
+        
+            width:112px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world!</h1>
+    <div><hr class="a"><strong>welocome</strong><hr class="b"></div>
+    <script>
+        const second = 'a';
+        var a = 1;
+        
+        let name = 2;
+        console.log(typeof name);
+
+        //creating an object:
+
+        var person = {name:'john',age:31,
+        favColor:"green",height:183};
+        console.log(person.name);
+        //built-in length property count the numer of char in string
+        console.log(person.name.length);
+        //object method--> property to contain a function definition.
+        // document.write() here write() is a method and document is an object.
+        // Methods are functions that are stored as object properties.
+
+       // object constructor
+       function person(name, age, color){ // person is an object constructor, which takes parameter.
+           this.name = name; // assign them to object properties
+           this.age = age; // this is a keyword refers to the current object.
+           this.favColor = color;
+       };
+       //creating objects
+       var person1 = new person("john",42,"green");
+       var person2 = new person("anjali",22,"yellow");
+       console.log(person1.name);
+    </script>
+</body>
+</html>
